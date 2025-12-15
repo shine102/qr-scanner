@@ -7,7 +7,6 @@ A Chrome-compatible Manifest V3 extension that lets you paste or drop screenshot
 - Client-only decoding powered by `@zxing/browser`
 - Result preview with quick copy button and safe URL link-out
 - Optional decode history stored locally (last 10 entries)
-- Minimal permissions (`storage` only)
 
 ## Installation
 1. Clone or download this repository.
@@ -29,7 +28,6 @@ A Chrome-compatible Manifest V3 extension that lets you paste or drop screenshot
 
 ## Security Notes
 - QR decoding happens entirely within the popup using ZXing’s WebAssembly implementation, so the image data never leaves your machine.
-- The extension requests only the `storage` permission for the local history feature.
 - URL links are restricted to `http`/`https` schemes and open in a new tab with `rel="noopener noreferrer"` to avoid opener attacks.
 
 ## Development
