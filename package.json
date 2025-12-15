@@ -1,0 +1,21 @@
+{
+  "name": "qr-scanner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/popup.ts --bundle --format=esm --target=es2020 --outfile=popup/popup.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@zxing/browser": "^0.1.5"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.32",
+    "esbuild": "^0.27.1",
+    "typescript": "^5.9.3"
+  }
+}

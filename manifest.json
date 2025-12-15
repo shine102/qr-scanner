@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Paste QR Decoder",
+  "version": "0.1.0",
+  "description": "Paste or drop screenshots to decode QR codes entirely offline.",
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": ["storage", "clipboardRead"]
+}
